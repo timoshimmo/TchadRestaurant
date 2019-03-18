@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_horizontal"
+    android:orientation="vertical" android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="restaurant.org.tchadrestaurant.LoginActivity"
+    android:background="@mipmap/restaurant_background">
+
+    <!-- Login progress -->
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:id="@+id/btnBack"
+        android:layout_gravity="top|left"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/left_arrow"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:textSize="27sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp" />
+
+    <ProgressBar android:id="@+id/login_progress" style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" android:visibility="gone" />
+
+    <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:id="@+id/email_login_form" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edit_text_background"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp">
+
+            <restaurant.org.tchadrestaurant.AutoCompleteTextRoman
+                android:id="@+id/email" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:hint="Email"
+                android:inputType="textEmailAddress" android:maxLines="1"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:textColor="@color/mid_gray" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edit_text_background"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp">
+
+            <restaurant.org.tchadrestaurant.CustomEditTextRoman
+                android:id="@+id/password" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:hint="Password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="Sign In"
+                android:imeOptions="actionUnspecified" android:inputType="textPassword"
+                android:maxLines="1" android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:textColor="@color/mid_gray" />
+
+            </LinearLayout>
+
+            <restaurant.org.tchadrestaurant.CustomButtonRoman
+                android:id="@+id/email_sign_in_button" style="?android:textAppearanceSmall"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" android:text="Sign in"
+                android:textStyle="bold"
+                android:background="@drawable/button_corners_background"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

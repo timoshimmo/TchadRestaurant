@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="restaurant.org.tchadrestaurant.DrinksFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDrinks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fabGetMeals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="#FF7961bf"
+        fab:fab_colorPressed="#FF55418c"
+        fab:fab_colorRipple="#FF9c83e5"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="35dp"
+        android:src="@mipmap/dinner"
+        android:scaleType="fitCenter" />
+
+</RelativeLayout>

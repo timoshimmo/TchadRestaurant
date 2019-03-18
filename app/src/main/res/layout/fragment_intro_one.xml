@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="5dp" tools:context=".IntroActivityFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/titleContainer"
+        android:layout_below="@+id/imgMenuIntro"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_menu_string"
+            android:id="@+id/txtTitle1"
+            android:textColor="@color/theme_purple"
+            android:textSize="@dimen/size_23"
+            android:gravity="center" />
+
+        <restaurant.org.tchadrestaurant.CustomTextRoman
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_menu_subtitle_string"
+            android:id="@+id/txtSubTitle1"
+            android:textColor="@color/theme_purple"
+            android:textSize="@dimen/size_15"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/intro_icon_width_height"
+        android:layout_height="@dimen/intro_icon_width_height"
+        android:id="@+id/imgMenuIntro"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/food_menu_intro_icon"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_30"
+        android:layout_marginTop="40dp" />
+</RelativeLayout>

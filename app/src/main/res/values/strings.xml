@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">TchadRestaurant</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="already_a_member">Already a member?</string>
+    <string name="get_started">Get Started</string>
+    <string name="food_menu_string">Browse food menu</string>
+    <string name="food_menu_subtitle_string">Browse through food, drinks and dessert menu to see what is cooking</string>
+    <string name="food_order_title_string">Make an order</string>
+    <string name="food_order_subtitle_string">Make an order in seconds without the assistance of a waiter</string>
+    <string name="detail_title_string">View menu item details</string>
+    <string name="detail_subtitle_string">View details to find out the ingredients used in each menu item</string>
+    <string name="rate_title_string">Rate menu items</string>
+    <string name="rate_subtitle_string">Rate your favorite food, drinks or dessert and leave a comment</string>
+
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_sign_in">Sign In</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="table_prompt">Select Table No.</string>
+
+    <string-array name="table_arrays">
+        <item>Select Table No.</item>
+        <item>TBL011</item>
+        <item>TBL012</item>
+        <item>TBL013</item>
+        <item>TBL014</item>
+        <item>TBL101</item>
+        <item>TBL102</item>
+        <item>TBL103</item>
+        <item>TBL104</item>
+        <item>TBL211</item>
+        <item>TBL212</item>
+        <item>TBL213</item>
+        <item>TBL214</item>
+        <item>TBL322</item>
+        <item>TBL323</item>
+        <item>TBL324</item>
+    </string-array>
+
+</resources>
